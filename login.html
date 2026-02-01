@@ -10,7 +10,8 @@
     <div class="container">
         <h2 class="title">Login</h2>
 
-        <form class="form" action="login.php" method="post">
+        <!-- Frontend-only form: redirects to your portfolio URL -->
+        <form class="form" id="loginForm">
             <label class="label">Email</label>
             <input type="email" class="input" placeholder="Enter your Email" required>
 
@@ -25,6 +26,15 @@
             <a href="register.html" class="link">Register</a>
         </p>
     </div>
+
+    <script>
+        // Redirect to portfolio after login (frontend-only)
+        document.getElementById("loginForm").addEventListener("submit", function(e){
+            e.preventDefault(); // prevent default form submission
+            // You can add simple email/password validation here if desired
+            window.location.href = "https://your-portfolio-url.vercel.app"; // <-- replace with your deployed portfolio URL
+        });
+    </script>
 
 </body>
 </html>
