@@ -10,7 +10,8 @@
     <div class="container">
         <h2 class="title">Register</h2>
 
-        <form class="form" action="register.php" method="post">
+        <!-- Frontend-only form -->
+        <form class="form" id="registerForm">
             <label class="label">Full Name</label>
             <input type="text" class="input" placeholder="Enter your Full Name" required>
 
@@ -28,6 +29,15 @@
             <a href="login.html" class="link">Login</a>
         </p>
     </div>
-    
+
+    <script>
+        // Redirect to portfolio after registration (frontend-only)
+        document.getElementById("registerForm").addEventListener("submit", function(e){
+            e.preventDefault(); // prevent default form submission
+            // Optional: simple validation can be added here
+            window.location.href = "https://your-portfolio-url.vercel.app"; // <-- replace with your deployed portfolio URL
+        });
+    </script>
+
 </body>
 </html>
