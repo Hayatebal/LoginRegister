@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
-    <link role="stylesheet" href="styles2.css">
-
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
 
     <div class="container">
         <h2 class="title">Register</h2>
 
-        <form class="form">
+        <form class="form" action="register.php" method="post">
             <label class="label">Full Name</label>
-            <input type="text" class="input" placeholder="Enter your Full Name">
+            <input type="text" class="input" placeholder="Enter your Full Name" required>
 
-        <label class="label">email</label>
-            <input type="email" class="input" placeholder="Enter your email">
+            <label class="label">Email</label>
+            <input type="email" class="input" placeholder="Enter your Email" required>
 
-        <label class="label">Password</label>
-        <input type="password" class="input" placeholder="Create your Password">
+            <label class="label">Password</label>
+            <input type="password" class="input" placeholder="Create your Password" required>
 
-        <input class="btn" type="submit" value="Register">
+            <input class="btn" type="submit" value="Register">
         </form>
 
         <p class="text">
             Already have an account?
-            <a href="login.html" class="link">login</a>
+            <a href="login.html" class="link">Login</a>
         </p>
     </div>
     
