@@ -31,11 +31,14 @@
         // Redirect to portfolio after login (frontend-only)
         document.getElementById("loginForm").addEventListener("submit", function(e){
             e.preventDefault(); // prevent default form submission
-            // You can add simple email/password validation here if desired
-            window.location.href = "portfolio-ten-opal-56.vercel.app"; // <-- replace with your deployed portfolio URL
+            // Optionally, validate email and password here
+
+            // Redirect to portfolio
+            window.location.href = "portfolio.html"; // Adjust this URL if needed
+            // If your portfolio is hosted online, use the full URL, like:
+            // window.location.href = "https://your-portfolio-url.com/portfolio.html";
         });
     </script>
 
 </body>
 </html>
-
